@@ -16,8 +16,8 @@ public class TableController {
 
     @RequestMapping(value = "table",method = RequestMethod.GET)
     public String getTable(Map<String,Object> model ){
-        for (int i=0; i<100;i++){
-            model.put("table ",tableService.getColumn(i));
+        for (int i =1 ; i<100 ; i++) {
+            model.put("table ", tableService.getColumn(i));
         }
         return "table";
 

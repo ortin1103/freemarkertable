@@ -12,10 +12,9 @@ public class TableService {
     @Autowired
     Column column;
 
-    public Column getColumn(int i){
-
-        column= new Column(i,new Date(),new Random().nextLong());
-        return  column;
+    public Column getColumn(int i) {
+            column = new Column(i, new Date().getTime(), new Random().nextLong());
+            return column;
 
     }
 }

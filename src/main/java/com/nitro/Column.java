@@ -3,20 +3,18 @@ package com.nitro;
 
 import org.springframework.stereotype.Component;
 
-import java.util.Date;
-
 @Component
 public class Column {
-    int id;
-    Date date;
+  public   int id;
+    long time;
     long rand;
 
     public Column() {
     }
 
-    public Column(int id, Date date, long rand) {
+    public Column(int id, long time, long rand) {
         this.id = id;
-        this.date = date;
+        this.time = time;
         this.rand = rand;
     }
 
@@ -28,12 +26,12 @@ public class Column {
         this.id = id;
     }
 
-    public Date getDate() {
-        return date;
+    public long getTime() {
+        return time;
     }
 
-    public void setDate(Date date) {
-        this.date = date;
+    public void setTime(long time) {
+        this.time = time;
     }
 
     public long getRand() {
